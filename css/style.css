@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*--------------------
+	font
+	font-family: 'DM Serif Text', serif;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Noto Sans SC', sans-serif;
+ *--------------------*/
+
+/*--------------------
+ * common
+ *--------------------*/
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: 'Montserrat', 'Noto Sans CS', sans-serif;
+	color: #003c3d;
+	font-size: 1.6rem;
+	font-weight: 300;
+	background-color: #e5dcca;
+	letter-spacing: 0.05em;
+}
+img {
+	max-width:100%;
+	height:auto;
+}
+btn {
+	overflow : hidden;
+	outline : none;
+}
+.text-center {
+	text-align: center;
+}
+.img-pc {
+	display:none;
+}
+.img-sp {
+	
+}
+.wrapper {
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+.btn {
+	display: block;
+	border-radius: 5px;
+	-webkit-appearance:none;
+	appearance:none;
+	padding:  8px 16px;
+	font-size: 1.6rem;
+	border:none;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	outline: none;
+}
+
+
+/*--------------------
+ * pc
+ *--------------------*/
+@media screen and (min-width:641px) {
+	
+}
