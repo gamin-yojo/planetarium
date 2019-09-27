@@ -78,6 +78,10 @@ ins {
     text-decoration:none;
 }
 
+.clearfix {
+    display: inline-table;
+    min-height: 1%;
+}
 .clearfix:after {
     content: ".";
     display: block;
@@ -85,25 +89,9 @@ ins {
     clear: both;
     visibility: hidden;
 }
- 
-.clearfix {
-    display: inline-table;
-    min-height: 1%;
-}
- 
+
 /* Hides from IE-mac */
 * html .clearfix {
     height: 1%;
 }
-.clearfix {
-    display: block;
-}
 /* End hide from IE-mac */
-
-.clear {
-	clear:both;
-}
-
-.alt {
-	
-}

@@ -1,65 +1,510 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/*--------------------
-	font
-	font-family: 'DM Serif Text', serif;
-	font-family: 'Montserrat', sans-serif;
-	font-family: 'Noto Sans SC', sans-serif;
- *--------------------*/
 
 /*--------------------
- * common
+ * header
  *--------------------*/
-html {
-	font-size: 62.5%;
+
+.menu-list {
+	display: none;
 }
-body {
-	font-family: 'Montserrat', 'Noto Sans CS', sans-serif;
-	color: #003c3d;
-	font-size: 1.6rem;
-	font-weight: 300;
-	background-color: #e5dcca;
-	letter-spacing: 0.05em;
+/*--------------------
+ * hero
+ *--------------------*/
+.curtain {
+	position: fixed;
+	z-index: 10;
+	width: 100vw;
+	height: 100vh;
+	background-color: #101820;
 }
-img {
-	max-width:100%;
-	height:auto;
+
+#hero {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	color: #fff;
+	overflow: hidden;
 }
-btn {
-	overflow : hidden;
-	outline : none;
+
+.hero-image {
+	display: flex;
 }
-.text-center {
+
+.hero-image li {
+	position: absolute;
+	background-color: #000;
+}
+
+.hero-image li img {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	opacity: 0.7;
+}
+
+.hero-image-btn {
+	position: absolute;
+	bottom: 0px;
+	display: flex;
+	justify-content: center;
+	margin-left: -2px;
+	width: 100vw;
+}
+
+.hero-image-btn li {
+	margin-left: 2px;
+
+}
+
+.hero-image-btn li a {
+	display: block;
+	max-width: 30vw;
+	width: 180px;
+	height: 8px;
+	box-sizing: border-box;
+	text-indent: -9999px;
+	background-color: #3e3e3e;
+	opacity: 0.7;
+	border-radius: 2px;
+	transition: all 1s;
+}
+
+.hero-image-btn li a.current {
+	background-color: #e3e3e3;
+}
+
+.title {
+	position: absolute;
+	top: 32px;
+	width: 100vw;
+}
+
+.title h1 {
+	width: 300px;
+}
+
+.title-ja {
+	font-size: 3.6rem;
+	margin-bottom: 24px;
+}
+
+.title-en {
+	margin-bottom: 4px;
+}
+
+.hero-text {
+	position: absolute;
+	top: 50vh;
+	display: flex;
+	z-index: 20;
+	justify-content: center;
+	width: 100vw;
+	font-size: 3.6rem;
+	letter-spacing: 0.5em;
+}
+
+
+.loading {
+	margin-top: 32px;
+	letter-spacing: 0;
+}
+
+.loading i {
+	color: #af7d58;
+}
+
+.hero-nav {
+	position: absolute;
+	bottom: 16px;
+	width: 100vw;
+	word-break: break-all;
+}
+
+.hero-nav ul {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.hero-nav ul li {
+	margin-left: 24px;
+}
+
+.hero-nav ul li a {
+	border-bottom: 2px solid rgba(62, 62, 62, 0);
+	padding-bottom: 8px;
+	color: #fff;
+	text-transform: capitalize;
+	transition: all 0.5s;
+}
+
+.hero-nav ul li a:hover {
+	color: #af7d58;
+	border-bottom: 2px solid #af7d58;
+}
+
+/*--------------------
+ * topick
+ *--------------------*/
+#topick {
+	padding-top: 32px;
+	background-color: #13243c;
+	color: #e3e3e3;
+}
+
+.topick-box {
+	border-radius: 10px;
+	padding: 8px;
+	background-color: #101820;
+}
+
+.topick-item {
+	display: flex;
+}
+
+.topick-item li:first-child {
+	margin-right: 16px;
+
+}
+
+.topick-item li:last-child {
+	border-left: 1px solid #e3e3e3;
+	padding-left: 16px;
+}
+
+/*--------------------
+ * About
+ *--------------------*/
+.about-item {
+	margin-top: 128px;
+}
+
+.about-box {
+	width: 100vw;
+	margin-top: 128px;
+}
+
+.about-image {
+	width: 100vw;
+	height: 400px;
+}
+
+.about-image_1 {
+	background: linear-gradient(0deg,
+			rgba(19, 36, 60, 1),
+			rgba(0, 0, 0, 0.75),
+			rgba(19, 36, 60, 1)),
+		url(../img/symphony.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.about-image_2 {
+	background: linear-gradient(0deg,
+			rgba(19, 36, 60, 1),
+			rgba(0, 0, 0, 0.7),
+			rgba(19, 36, 60, 1)),
+		url(../img/child.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.about-flex {
+	float: left;
+	padding-top: 128px;
+	width: 100vw;
+}
+
+.about-subtitle {
+	margin-bottom: 64px;
+	font-size: 3.6rem;
+	letter-spacing: 0.3em;
+}
+
+.about-text-box {
+	max-width: 560px;
+	letter-spacing: 0.3em;
+	line-height: 4.8rem;
+}
+
+/*--------------------
+ * Usage Time
+ *--------------------*/
+.usage_table-title {
+	margin-top: 64px;
+}
+
+.usage-table {
+	margin-top: 32px;
+}
+
+.other {
+	position: relative;
+	margin: 64px auto 0;
+	border-radius: 10px;
+	width: 640px;
+	max-width: 80%;
+	background-color: #13243c;
+	color: #e3e3e3;
+}
+
+.my-plus {
+	position: absolute;
+	top: 30px;
+	right: 32px;
+	font-size: 2.4rem;
+	transform: 0;
+	transition: all 0.7s;
+}
+
+.my-plus.current {
+	transform: rotate(45deg);
+}
+
+.dl_toggle dt {
+	padding: 24px;
+	cursor: pointer;
+}
+
+.dl_toggle dd {
+	display: none;
+	padding: 24px;
+	text-align: left;
+}
+
+/*--------------------
+ * price
+ *--------------------*/
+.price-table {
+	margin: 64px auto 0px;
+	text-align: right;
+}
+
+.price-table th {
+	border-bottom: 1px solid;
+	padding: 16px;
+}
+
+.price-table td {
+	padding: 16px;
+}
+
+.child-remarks {
+	position: relative;
+	left: calc(50% + 48px);
+	display: inline-block;
+	margin-top: 64px;
+	border-radius: 15px;
+	padding: 16px;
+	background-color: #e3e3e3;
+	color: #13243c;
 	text-align: center;
 }
-.img-pc {
-	display:none;
-}
-.img-sp {
-	
-}
-.wrapper {
-	box-sizing: border-box;
-	padding: 0 20px;
-}
-.btn {
-	display: block;
-	border-radius: 5px;
-	-webkit-appearance:none;
-	appearance:none;
-	padding:  8px 16px;
-	font-size: 1.6rem;
-	border:none;
-	color: #fff;
-	font-family: 'Montserrat', sans-serif;
-	outline: none;
-}
 
+.child-remarks:after {
+	content: " ";
+	position: absolute;
+	left: calc(50% - 84px);
+	margin-top: -60px;
+	width: 0;
+	border-bottom: 64px solid #e3e3e3;
+	border-left: 24px solid transparent;
+	border-right: 24px solid transparent;
+}
 
 /*--------------------
- * pc
+ * access
  *--------------------*/
-@media screen and (min-width:641px) {
-	
+.bus {
+	margin-top: 64px;
+}
+
+.bus h4 {
+	border-top: 1px solid;
+	padding-top: 16px;
+}
+
+.access-box {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 64px;
+}
+
+
+.via dt {
+	margin-top: 32px;
+}
+
+.via dd {
+	padding-left: 32px;
+}
+
+.access-map iframe {
+	width: 500px;
+	height: 500px;
+}
+
+/*--------------------
+ * How To Use
+ *--------------------*/
+.how-to-use-box {
+	margin-top: 64px;
+}
+
+/*--------------------
+ * sp
+ *--------------------*/
+@media screen and (max-width:640px) {
+
+	/*--------------------
+	 * sp-hero
+	 *--------------------*/
+	.title {
+		top: 16px;
+	}
+	.title h1 {
+		max-width: calc(100% - 70px);
+	}
+
+	.title-ja {
+		font-size: 2.6rem;
+		margin-bottom: 12px;
+	}
+
+	.title-en {
+		font-size: 1.2rem;
+		margin-bottom: 0;
+	}
+
+	.hero-text {
+		font-size: 1.8rem;
+	}
+
+	.hero-nav ul {
+		flex-direction: column;
+		text-align: right;
+	}
+
+	.hero-nav ul li {
+		margin-left: 0;
+	}
+
+	/*--------------------
+	 * sp-topick
+	 *--------------------*/
+	.topick-item {
+		flex-direction: column;
+	}
+
+	.topick-item li {
+		padding-bottom: 8px;
+	}
+
+	.topick-item li:last-child {
+		border-top: 1px solid #e3e3e3;
+		border-left: 0;
+	}
+
+	/*--------------------
+	 * sp-about
+	 *--------------------*/
+	.about-item {
+		margin-top: 64px;
+	}
+
+	.about-subtitle {
+		padding: 0 8px;
+		font-size: 2.4rem;
+		text-align: center;
+	}
+
+	/*--------------------
+	 * sp-price
+	 *--------------------*/
+	.child-remarks {
+		left: calc(50% - 100px);
+	}
+
+	/*--------------------
+	 * sp-access
+	 *--------------------*/
+	.access-box {
+		flex-direction: column;
+		margin-top: 64px;
+	}
+
+	.access-text {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	.access-map-outer {
+		position: relative;
+		padding-top: 66.7%;
+	}
+
+	.access-map {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 0;
+		width: 100vw;
+		height: 100%;
+	}
+
+	.access-map iframe {
+		width: 100vw;
+		height: 100%;
+	}
+
+	/*--------------------
+	 * sp-Usage Time
+	 *--------------------*/
+	.calendar dt {
+		margin-right: 32px;
+		padding: 8px 8px 16px;
+	}
+
+	.calendar dd {
+		padding: 8px 0 16px;
+	}
+
+	.other {
+		max-width: 100%;
+	}
+
+	.dl_toggle dt {
+		padding-top: 32px;
+	}
+
+	.dl_toggle dd {
+		font-size: 1.2rem;
+	}
+
+	.dl_toggle dd ul {
+		margin-top: 16px;
+	}
+
+	.my-plus {
+		top: 8px;
+		right: 8px;
+		font-size: 1.8rem;
+	}
+
+	/*--------------------
+	 * sp-price
+	 *--------------------*/
+	.price-table {
+		padding: 0 16px;
+	}
+
+	/*--------------------
+	 * sp-Access
+	 *--------------------*/
+	.access-map-outer {
+		margin-top: 32px;
+	}
 }

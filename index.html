@@ -1,39 +1,365 @@
 <!doctype html>
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>title</title>
-<meta name="description" content="サイト説明">
-<meta property="og:title" content="サイトタイトルの説明">
-<meta property="og:type" content="website">
-<meta property="og:url" content="#">
-<meta property="og:image" content="サイトicon">
-<meta property="og:site_name" content="サイトの名前">
-<meta property="og:description" content="サイトの説明">
-<meta name="format-detection" content="telephone=no">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,600,700" rel="stylesheet">
-<link rel="apple-touch-icon" href="apple用のアイコン画像">
-<link rel="shortcut icon" href="images/favicon.ico">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>プラネタリウム｜一宮市地域文化広場</title>
+	<meta name="description" content="一宮市地域文化広場の中にあるプラネタリウムのホームページです。">
+	<meta property="og:title" content="サイトタイトルの説明">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="#">
+	<meta property="og:image" content="サイトicon">
+	<meta property="og:site_name" content="一宮市地域文化広場プラネタリウム">
+	<meta property="og:description" content="サイトの説明">
+	<meta name="format-detection" content="telephone=no">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,600,700" rel="stylesheet">
+	<link rel="apple-touch-icon" href="apple用のアイコン画像">
+	<!--	<link rel="shortcut icon" href="">-->
+	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+		<button class="btn-trigger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
 
-<!--	header-->
-	<header></header>
-<!--	/header-->
-	
-<!--	main-->
-	<main></main>
-<!--	/main-->
-	
-<!--	footer-->
-	<footer></footer>
-<!--	/footer-->
+	<!--	header-->
+	<header id="top">
+		<div class="curtain"></div>
+		<ul class="menu-list text-center">
+			<li class="menu-item top menu-current">
+				<a href="#top" class="menu-link hover-down link-top">top</a>
+			</li>
+			<li class="menu-item about">
+				<a href="#about" class="menu-link hover-down link-about">about</a>
+			</li>
+			<li class="menu-item usage_time">
+				<a href="#usage_time" class="menu-link hover-down link-usage-time">usage time</a>
+			</li>
+			<li class="menu-item price">
+				<a href="#price" class="menu-link hover-down link-price">price</a>
+			</li>
+			<li class="menu-item access">
+				<a href="#access" class="menu-link hover-down link-access">access</a>
+			</li>
+			<li class="menu-item how_to_use">
+				<a href="#how_to_use" class="menu-link hover-down link-how-to-use">
+					how&nbsp;to&nbsp;use
+				</a>
+			</li>
+		</ul>
 
-<script src="http://code.jquery.com/jquery-3.2.1.js"></script>
-<script src="js/"></script>
-</body>
-</html>
+
+		<section id="hero">
+			<ul class="hero-image">
+				<li><img src="img/hero1.jpg" alt="hero1"></li>
+				<li><img src="img/hero2.jpg" alt="hero2"></li>
+				<li><img src="img/hero3.jpg" alt="hero3"></li>
+			</ul>
+
+			<ul class="hero-image-btn">
+				<li><a href="#1">1</a></li>
+				<li><a href="#2">2</a></li>
+				<li><a href="#3">3</a></li>
+			</ul>
+
+			<article class="title fadein-right">
+				<div class="wrapper">
+					<h1>
+						<p class="title-en span-wrap">Ichinomiya Local Culture Plaza</p>
+						<p class="title-ja span-wrap">一宮地域文化広場</p>
+						<p class="title-en span-wrap">Planetarium</p>
+						<p class="title-ja span-wrap"> プラネタリウム</p>
+					</h1>
+				</div>
+			</article>
+
+			<!--				hero body-->
+			<div class="hero-text items-center">
+				<p>安らぎのひと時を。</p>
+				<p class="loading"><i class="fas fa-spinner fa-spin"></i></p>
+			</div>
+			<!--			/hero sbody-->
+
+			<nav class="hero-nav fadein-left">
+				<ul class="wrapper _sp">
+					<li><a href="#about">about</a></li>
+					<li><a href="#usage_time">usage&nbsp;time</a></li>
+					<li><a href="#price">price</a></li>
+					<li><a href="#access">access</a></li>
+					<li><a href="#how_to_use">how&nbsp;to&nbsp;use</a></li>
+				</ul>
+			</nav>
+		</section>
+	</header>
+	<!--	/header-->
+
+	<!--	main-->
+	<main>
+
+		<!--		topick-->
+		<section id="topick">
+			<div class="wrapper">
+				<div class="topick-box">
+					<ul class="topick-item">
+						<li>
+							<i class="fas fa-chevron-circle-right my-right"></i>
+							topick
+						</li>
+						<li>
+							Webサイトをリニューアルしました。
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!--		/topick-->
+
+		<!--	About-->
+		<section id="about" class="section">
+			<hgroup class="subtitle-group">
+				<h2>about</h2>
+				<h3>当館について</h3>
+			</hgroup>
+
+			<article class="about-item fadein-up">
+				<div class="clearfix">
+					<div class="about-image about-image_1">
+						<div class="about-flex items-center">
+							<h4 class="about-subtitle">季節彩る星空を、<br class="br_sp">見上げて。</h4>
+							<p class="about-text-box wrapper">
+								私たちはプラネタリウムの施設を介して、季節にあった星空をお見せします。
+								実際の星空では確認が難しい星々を繊細に投影します。
+								気候に左右されることなく、ゆったりした座席で、癒しのひとときを・・・。
+								あなたの大切な人と、足を運んでみませんか？
+							</p>
+						</div>
+					</div>
+				</div>
+				<a href="symphony.html" class="my-btn">
+					<p>more</p>
+				</a>
+			</article>
+
+			<article class="about-item fadein-up">
+				<div class="clearfix">
+					<div class="about-image about-image_2">
+						<div class="about-flex items-center">
+							<h4 class="about-subtitle">小さな好奇心を<br class="br_sp">広げよう。</h4>
+							<p class="about-text-box wrapper">
+								私たちは、子どもの知的好奇心を広げるお手伝いをします。
+								楽しいこと、興味のあること、知らない世界があること。
+								子どもの好奇心を引き立てるコンテンツを用意しています。
+								お子様と一緒に、「知らないことを知る楽しさ」を共有しませんか？
+							</p>
+						</div>
+					</div>
+				</div>
+				<a href="" class="my-btn">
+					<p>more</p>
+				</a>
+			</article>
+		</section>
+		<!--		/About-->
+
+
+		<!--		Usage Time-->
+		<section id="usage_time" class="section">
+
+			<hgroup class="subtitle-group">
+				<h2>usage time</h2>
+				<h3>利用時間</h3>
+			</hgroup>
+
+			<h4 class="usage_table-title text-center">
+				投影開始時間（一回45分）
+			</h4>
+
+			<dl class="calendar usage-table">
+				<dt><span>月</span></dt>
+				<dd><span>休館</span></dd>
+				<dt>火〜金</dt>
+				<dd>
+					<div><span>13:30,15:00 ※午前は団体利用</span></div>
+				</dd>
+				<dt><span>土</span></dt>
+				<dd><span>11:00,　13:30,　15:00</span></dd>
+				<dt><span>日・祝</span></dt>
+				<dd><span>11:00,　13:30,　14:30,　15:30</span></dd>
+			</dl>
+
+			<div class="wrapper">
+				<article class="other">
+
+					<dl class="dl_toggle text-center">
+						<dt>
+							その他　休館日について
+							<i class="fas fa-plus fa-wf my-plus"></i>
+						</dt>
+						<dd>
+							<ul class="simple-flex">
+								<li>・</li>
+								<li>月曜日に規定する休日に当たるときは、その翌日以後の最も早い休日でない日)</li>
+							</ul>
+							<ul class="simple-flex">
+								<li>・</li>
+								<li>1月1日から同月4日まで及び12月28日から同月31日まで</li>
+							</ul>
+							<ul class="simple-flex">
+								<li>・</li>
+								<li>プログラム組替時(5・9・11・2月)の約1週間と保守点検</li>
+							</ul>
+						</dd>
+					</dl>
+				</article>
+			</div>
+		</section>
+		<!--		/Usage Time-->
+
+		<!--		Price-->
+		<section id="price" class="section">
+
+			<hgroup class="subtitle-group">
+				<h2>price</h2>
+				<h3>料金</h3>
+			</hgroup>
+
+			<table class="price-table">
+				<tr>
+					<th>年齢</th>
+					<th>個人</th>
+					<th>団体</th>
+				</tr>
+				<tr>
+					<td>大人</td>
+					<td>¥60</td>
+					<td>¥40</td>
+				</tr>
+				<tr>
+					<td>小人<br class="br_sp">(中学生以下)</td>
+					<td>¥30</td>
+					<td>¥20</td>
+				</tr>
+			</table>
+			<p class="child-remarks fadein-up">土曜日は子供無料です。</p>
+		</section>
+		<!--		/Price-->
+
+		<!--		Access-->
+		<section id="access" class="section">
+			<hgroup class="subtitle-group">
+				<h2>access</h2>
+				<h3>料金</h3>
+			</hgroup>
+
+			<article class="wrapper -sp">
+				<div class="access-box">
+					<div class="access-text">
+						<p>
+							〒491-0002<br>
+							愛知県一宮市時之島字玉振1番地1<br>
+							TEL:(0586) 51-2180
+						</p>
+						<div class="bus fadein-right">
+							<h4>バスをご利用の場合</h4>
+							<ul>
+								<li>
+									<dl class="via">
+										<dt>
+											<i class="fas fa-chevron-circle-right my-right"></i>
+											大山町経由
+										</dt>
+										<dd>
+											江南駅行き、江南団地行き　金比羅前下車<br>
+											徒歩7分
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl class="via">
+										<dt>
+											<i class="fas fa-chevron-circle-right my-right"></i>
+											春明経由
+										</dt>
+										<dd>
+											江南駅行き　春明下車<br>徒歩5分
+										</dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="access-map-outer">
+						<div class="access-map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.2372516627656!2d136.84296200094633!3d35.3249295301821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60030a203d6a6e6d%3A0xdcc65128fa6250af!2z44OX44Op44ON44K_44Oq44Km44Og6aSo!5e0!3m2!1sja!2sjp!4v1568104216301!5m2!1sja!2sjp" width="500" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<!--		/Access-->
+
+		<!--		How To Use-->
+		<section id="how_to_use" class="section">
+			<hgroup class="subtitle-group">
+				<h2>how to use</h2>
+				<h3>施設利用状況</h3>
+			</hgroup>
+
+			<p class="text-center how-to-use-box">施設の利用情報のご案内です。</p>
+
+			<a href="" class="my-btn">
+				<p>click</p>
+			</a>
+		</section>
+		<!--		/How To Use-->
+
+	</main>
+	<!--	/main-->
+
+	<!--	footer-->
+	<footer>
+		<section class="wrapper">
+			<h2 class="site-map-title">
+				<a href="#top">
+					ichinomiya local culture plaza<br>planetarium
+				</a>
+			</h2>
+			<ul class="site-map-setting">
+				<li>
+					<ul class="site-map-nav">
+						<li><a href="#top">top</a></li>
+						<li><a href="#about">about</a></li>
+						<li><a href="#usage_time">usage time</a></li>
+						<li><a href="#price">price</a></li>
+						<li><a href="#access">access</a></li>
+						<li><a href="#how_to_use">how&nbsp;to&nbsp;use</a></li>
+					</ul>
+				</li>
+				<li>
+					<ul class="site-map-link">
+						<li><a href="#">一宮地域文化広場</a></li>
+						<li><a href="#">尾西文化広場</a></li>
+						<li><a href="#">イベント案内</a></li>
+						<li><a href="#">リンク集</a></li>
+						<li><a href="#">お問い合わせ</a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<small>
+				Copyright&copy; HAMADA SPORTS PROMOTE INC.<br class="br_sp"> All rights reserved.
+			</small>
+		</section>
+	</footer>
+	<!--	/footer-->
+
+	<script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="js/script.js"></script>
+</body></html>
