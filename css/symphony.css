@@ -11,7 +11,6 @@
 	z-index: 10px;
 	width: 100vw;
 	padding-top: 16px;
-	overflow: scroll;
 	background: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 	transition: all 0.5s;
 }
