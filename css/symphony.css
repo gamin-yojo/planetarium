@@ -103,6 +103,7 @@
 .img-symphony {
 	width: 480px;
 	height: 560px;
+	object-fit: cover;
 }
 
 /*--------------------
